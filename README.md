@@ -9,3 +9,6 @@ A Middleware for AspNet-Core-Projects using for Server-Side Request-Logging, pro
   app.UseRequestCounterMiddleware(new List<string>());
 
 ```
+
+also available as Nuget-Package: Install-Package AspNetCore.RequestCounter
+
