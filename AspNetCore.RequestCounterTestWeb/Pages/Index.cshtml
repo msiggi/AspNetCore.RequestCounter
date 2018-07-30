@@ -1,0 +1,55 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>Request-Counter-Middleware Testweb</h1>
+
+<h2>Current Requests</h2>
+
+<div class="row">
+    <div class="col">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Path</th>
+                    <th>Duration [ms]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var countItem in AspNetCore.RequestCounter.RequestCounter.RequestSummaryByPath)
+                {
+
+                    <tr>
+                        <td>@countItem.Path</td>
+                        <td>@countItem.Counter</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Path</th>
+                    <th>Duration [ms]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var countItem in AspNetCore.RequestCounter.RequestCounter.RequestCountItems)
+                {
+
+                    <tr>
+                        <td>@countItem.Path</td>
+                        <td>@countItem.Duration.TotalMilliseconds</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
