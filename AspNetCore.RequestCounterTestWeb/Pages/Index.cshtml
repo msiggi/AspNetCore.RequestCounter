@@ -21,10 +21,10 @@
                 @foreach (var countItem in AspNetCore.RequestCounter.RequestCounter.RequestSummaryByPath)
                 {
 
-                    <tr>
-                        <td>@countItem.Path</td>
-                        <td>@countItem.Counter</td>
-                    </tr>
+                <tr>
+                    <td>@countItem.Path</td>
+                    <td>@countItem.Counter</td>
+                </tr>
                 }
             </tbody>
         </table>
@@ -35,16 +35,18 @@
                 <tr>
                     <th>Path</th>
                     <th>Duration [ms]</th>
+                    <td>Ip</td>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var countItem in AspNetCore.RequestCounter.RequestCounter.RequestCountItems)
                 {
 
-                    <tr>
-                        <td>@countItem.Path</td>
-                        <td>@countItem.Duration.TotalMilliseconds</td>
-                    </tr>
+                <tr>
+                    <td>@countItem.Path</td>
+                    <td>@countItem.Duration.TotalMilliseconds</td>
+                    <td>@countItem.Ip</td>
+                </tr>
                 }
             </tbody>
         </table>

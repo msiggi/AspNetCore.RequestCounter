@@ -38,7 +38,7 @@ namespace AspNetCore.RequestCounter
 
                 if (!_excludedPathes.Any(x => httpContext.Request.Path.ToString().Contains(x)))
                 {
-                    RequestCounter.AddRequestCount(httpContext.Request.Path, sw.Elapsed);
+                    RequestCounter.AddRequestCount(httpContext.Request.Path, sw.Elapsed, httpContext.Connection.RemoteIpAddress.ToString());
                 }
 
             }

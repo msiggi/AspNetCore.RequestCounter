@@ -11,9 +11,9 @@ namespace AspNetCore.RequestCounter
     {
         public static ConcurrentBag<RequestCountItem> RequestCountItems { get; set; } = new ConcurrentBag<RequestCountItem>();
 
-        public static void AddRequestCount(string path, TimeSpan duration)
+        public static void AddRequestCount(string path, TimeSpan duration, string ip)
         {
-            RequestCountItems.Add(new RequestCountItem(path, duration));
+            RequestCountItems.Add(new RequestCountItem(path, duration, ip));
         }
 
         public static ConcurrentBag<RequestSummaryItem> RequestSummaryByPath
