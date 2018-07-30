@@ -12,3 +12,14 @@ A Middleware for AspNet-Core-Projects using for Server-Side Request-Logging, pro
 
 also available as Nuget-Package: Install-Package AspNetCore.RequestCounter
 
+
+After installing and configuring you have access to 
+
+```csharp
+
+  AspNetCore.RequestCounter.RequestCounter.RequestSummaryByPath
+  AspNetCore.RequestCounter.RequestCounter.RequestCountItems
+  
+  // more coming soon
+  
+```
