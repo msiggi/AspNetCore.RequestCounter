@@ -36,7 +36,7 @@ namespace AspNetCore.RequestCounter
                 await _next(httpContext);
                 sw.Stop();
 
-                if (_excludedPathes.Any(x => httpContext.Request.Path.ToString().Contains(x)))
+                if (!_excludedPathes.Any(x => httpContext.Request.Path.ToString().Contains(x)))
                 {
                     RequestCounter.AddRequestCount(httpContext.Request.Path, sw.Elapsed);
                 }
