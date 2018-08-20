@@ -11,16 +11,16 @@ namespace AspNetCore.RequestCounter
     {
         public static ConcurrentBag<RequestCountItem> RequestCountItems { get; set; } = new ConcurrentBag<RequestCountItem>();
 
-        public static void AddRequestCount(string path, TimeSpan duration, string ip)
+        public static void AddRequestCount(string path, TimeSpan duration, string ip, bool isMobile)
         {
-            RequestCountItems.Add(new RequestCountItem(path, duration, ip));
+            RequestCountItems.Add(new RequestCountItem(path, duration, ip, isMobile));
         }
 
         public static ConcurrentBag<RequestSummaryItem> RequestSummaryByPath
         {
             get
             {
-                var grouped = RequestCountItems.GroupBy(x => x.Path).Select(g => new RequestSummaryItem(g.Key, g.Count()));
+                var grouped = RequestCountItems.GroupBy(x => x.Path).Select(g => new RequestSummaryItem(g.Key, g.Count(), g.Count(c=>c.IsMobile)));
 
                 return new ConcurrentBag<RequestSummaryItem>(grouped);
             }

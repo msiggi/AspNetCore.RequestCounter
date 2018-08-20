@@ -15,6 +15,7 @@
                 <tr>
                     <th>Path</th>
                     <th>Duration [ms]</th>
+                    <th>Mobile Quota</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +25,7 @@
                 <tr>
                     <td>@countItem.Path</td>
                     <td>@countItem.Counter</td>
+                    <td>@countItem.MobileQuota [%]</td>
                 </tr>
                 }
             </tbody>
@@ -36,6 +38,7 @@
                     <th>Path</th>
                     <th>Duration [ms]</th>
                     <td>Ip</td>
+                    <td>IsMobile</td>
                 </tr>
             </thead>
             <tbody>
@@ -46,6 +49,7 @@
                     <td>@countItem.Path</td>
                     <td>@countItem.Duration.TotalMilliseconds</td>
                     <td>@countItem.Ip</td>
+                    <td>@countItem.IsMobile</td>
                 </tr>
                 }
             </tbody>
