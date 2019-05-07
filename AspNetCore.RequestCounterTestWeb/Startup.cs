@@ -33,7 +33,7 @@ namespace AspNetCore.RequestCounterTestWeb
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +53,7 @@ namespace AspNetCore.RequestCounterTestWeb
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseRequestCounterMiddleware(new List<string>());
+         //   app.UseRequestCounterMiddleware(new List<string>());
 
 
             app.UseMvc();
