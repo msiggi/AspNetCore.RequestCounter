@@ -15,7 +15,11 @@ namespace AspNetCore.RequestCounter
 
         readonly RequestDelegate _next;
         private List<string> _excludedPathes;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="next"></param>
+        /// <param name="excludedPathes">excludedPathes - Pathes not to count</param>
         public RequestCounterMiddleware(RequestDelegate next, List<string> excludedPathes)
         {
             _excludedPathes = excludedPathes;
