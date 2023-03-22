@@ -4,9 +4,9 @@
     ViewData["Title"] = "Home page";
 }
 
-<h1>Request-Counter-Middleware Testweb</h1>
+<h1 class="display-4">Request-Counter-Middleware Testweb</h1>
 
-<h2>Current Requests</h2>
+<h2 class="display-6">Current Requests</h2>
 
 <div class="row">
     <div class="col">
@@ -22,11 +22,11 @@
                 @foreach (var countItem in AspNetCore.RequestCounter.RequestCounter.RequestSummaryByPath)
                 {
 
-                <tr>
-                    <td>@countItem.Path</td>
-                    <td>@countItem.Counter</td>
-                    <td>@countItem.MobileQuota [%]</td>
-                </tr>
+                    <tr>
+                        <td>@countItem.Path</td>
+                        <td>@countItem.Counter</td>
+                        <td>@countItem.MobileQuota [%]</td>
+                    </tr>
                 }
             </tbody>
         </table>
@@ -45,17 +45,14 @@
                 @foreach (var countItem in AspNetCore.RequestCounter.RequestCounter.RequestCountItems)
                 {
 
-                <tr>
-                    <td>@countItem.Path</td>
-                    <td>@countItem.Duration.TotalMilliseconds</td>
-                    <td>@countItem.Ip</td>
-                    <td>@countItem.IsMobile</td>
-                </tr>
+                    <tr>
+                        <td>@countItem.Path</td>
+                        <td>@countItem.Duration.TotalMilliseconds</td>
+                        <td>@countItem.Ip</td>
+                        <td>@countItem.IsMobile</td>
+                    </tr>
                 }
             </tbody>
         </table>
     </div>
 </div>
-
-
-
