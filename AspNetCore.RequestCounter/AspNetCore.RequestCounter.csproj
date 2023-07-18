@@ -6,7 +6,7 @@
     <Authors>Marcel Siegel</Authors>
     <Company>SiegelNet</Company>
     <Description>A Middleware for AspNet-Core-Projects using for Server-Side Request-Logging, providing some basic summaries.</Description>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <PackageProjectUrl>https://github.com/msiggi/AspNetCore.RequestCounter</PackageProjectUrl>
     <PackageTags>Logging Counting Analytics</PackageTags>
   </PropertyGroup>
