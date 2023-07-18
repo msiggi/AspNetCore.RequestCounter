@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +8,7 @@ namespace AspNetCore.RequestCounter
 {
     public static class RequestCounter
     {
+        public static DateTime RequestCountStartDate { get; set; }
         public static ConcurrentBag<RequestCountItem> RequestCountItems { get; set; } = new ConcurrentBag<RequestCountItem>();
 
         public static void AddRequestCount(string path, TimeSpan duration, string ip, bool isMobile)

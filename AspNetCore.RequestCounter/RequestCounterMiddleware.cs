@@ -22,6 +22,8 @@ namespace AspNetCore.RequestCounter
         /// <param name="excludedPathes">excludedPathes - Pathes not to count</param>
         public RequestCounterMiddleware(RequestDelegate next, List<string> excludedPathes)
         {
+            RequestCounter.RequestCountStartDate = DateTime.UtcNow;
+
             _excludedPathes = excludedPathes;
 
             if (next == null) throw new ArgumentNullException(nameof(next));
