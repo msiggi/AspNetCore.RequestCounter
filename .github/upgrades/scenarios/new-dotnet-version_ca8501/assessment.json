@@ -1,0 +1,307 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-04-01T05:42:59.9050827Z",
+  "analysisEndTime": "2026-04-01T05:43:00.6676773Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 3,
+      "issues": 3,
+      "incidents": 6,
+      "effort": 6
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 3,
+        "Optional": 1,
+        "Potential": 2,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 1,
+        "Project": 3,
+        "Api": 2
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "AspNetCore.RequestCounter\\AspNetCore.RequestCounter.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "AspNetCore.RequestCounter",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net7.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 6,
+        "numberOfCodeFiles": 6,
+        "linesTotal": 187,
+        "linesOfCode": 187,
+        "totalApiScanned": 210,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "7f391ce1-ec3c-4872-a1fa-a918decc62ca",
+          "ruleId": "NuGet.0005",
+          "projectPath": "AspNetCore.RequestCounter\\AspNetCore.RequestCounter.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Http.Abstractions, 2.2.0\n\nEmpfehlung:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.AspNetCore.Http.Abstractions, and replace with new package Microsoft.AspNetCore.Http.Abstractions, 2.3.9",
+              "protected": "Microsoft.AspNetCore.Http.Abstractions, 2.2.0\n\nEmpfehlung:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.AspNetCore.Http.Abstractions, and replace with new package Microsoft.AspNetCore.Http.Abstractions, 2.3.9"
+            },
+            "kind": "File",
+            "path": "AspNetCore.RequestCounter\\AspNetCore.RequestCounter.csproj",
+            "snippet": "Microsoft.AspNetCore.Http.Abstractions, 2.2.0\n\nEmpfehlung:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.AspNetCore.Http.Abstractions, and replace with new package Microsoft.AspNetCore.Http.Abstractions, 2.3.9",
+            "protectedSnippet": "Microsoft.AspNetCore.Http.Abstractions, 2.2.0\n\nEmpfehlung:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217\nRemove Microsoft.AspNetCore.Http.Abstractions, and replace with new package Microsoft.AspNetCore.Http.Abstractions, 2.3.9",
+            "label": "Microsoft.AspNetCore.Http.Abstractions 2.2.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Http.Abstractions",
+              "PackageVersion": "2.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ce5cc846-3f7f-4dc0-8257-d61a0bf84927",
+          "ruleId": "Project.0002",
+          "projectPath": "AspNetCore.RequestCounter\\AspNetCore.RequestCounter.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+              "protected": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0"
+            },
+            "kind": "File",
+            "path": "AspNetCore.RequestCounter\\AspNetCore.RequestCounter.csproj",
+            "snippet": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+            "protectedSnippet": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net7.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "AspNetCore.RequestCounterTestBlazorApp\\AspNetCore.RequestCounterTestBlazorApp.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "AspNetCore.RequestCounterTestBlazorApp",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net7.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 29,
+        "numberOfCodeFiles": 6,
+        "linesTotal": 2171,
+        "linesOfCode": 169,
+        "totalApiScanned": 1365,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "1195ba7d-5805-4acb-b38c-058e80dea45f",
+          "ruleId": "Project.0002",
+          "projectPath": "AspNetCore.RequestCounterTestBlazorApp\\AspNetCore.RequestCounterTestBlazorApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+              "protected": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0"
+            },
+            "kind": "File",
+            "path": "AspNetCore.RequestCounterTestBlazorApp\\AspNetCore.RequestCounterTestBlazorApp.csproj",
+            "snippet": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+            "protectedSnippet": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net7.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "421ce793-85ee-4a96-90c3-cb5bd30c8a3f",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "AspNetCore.RequestCounterTestBlazorApp\\AspNetCore.RequestCounterTestBlazorApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "AspNetCore.RequestCounterTestBlazorApp\\Program.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 16,
+            "column": 4
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "AspNetCore.RequestCounterTestWeb\\AspNetCore.RequestCounterTestWeb.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "AspNetCore.RequestCounterTestWeb",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net7.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 16,
+        "numberOfCodeFiles": 11,
+        "linesTotal": 289,
+        "linesOfCode": 244,
+        "totalApiScanned": 1169,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "8a372e8d-1297-4f68-bad2-d4995615d2d8",
+          "ruleId": "Project.0002",
+          "projectPath": "AspNetCore.RequestCounterTestWeb\\AspNetCore.RequestCounterTestWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+              "protected": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0"
+            },
+            "kind": "File",
+            "path": "AspNetCore.RequestCounterTestWeb\\AspNetCore.RequestCounterTestWeb.csproj",
+            "snippet": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+            "protectedSnippet": "Aktuelles Zielframework: net7.0\nEmpfohlenes Zielframework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net7.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "11023bfe-c9e7-4fb5-9b26-8afa200ed2d5",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "AspNetCore.RequestCounterTestWeb\\AspNetCore.RequestCounterTestWeb.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "AspNetCore.RequestCounterTestWeb\\Program.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "links": [
+              {
+                "title": "API-Dokumentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 4
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "Das NuGet-Paket ist veraltet.\n\nWechseln Sie zur Dokumentation, und wenn ein Leitfaden zum Ersetzen der von diesem Paket bereitgestellten Funktionen vorhanden ist.",
+      "label": "Das NuGet-Paket ist veraltet",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Die Zielframeworks des Projekts m\u00FCssen in das neue Zielframework ge\u00E4ndert werden, das Sie f\u00FCr dieses Upgrade ausgew\u00E4hlt haben.\n\nW\u00E4hrend des Upgrades wird das Zielframework an die entsprechende Plattform angepasst, falls zutreffend. In einigen F\u00E4llen, f\u00FChrte das Upgrade des Projekts zu mehreren Zielframeworks, wenn es Features verwendete, die jetzt \u00FCber eigene Plattformen in modernen .NET-Frameworks (Windows, iOS, Android usw.) verf\u00FCgen.",
+      "label": "Die Zielframeworks des Projekts m\u00FCssen ge\u00E4ndert werden",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "\u00DCbersicht \u00FCber das Portieren von .NET\u00A0Framework zu .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET-Projekt-SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "Die API beinhaltet eine Verhaltens\u00E4nderung in der ausgew\u00E4hlten .NET-Version: Code und Bin\u00E4rdateien verhalten sich zur Laufzeit m\u00F6glicherweise anders, ohne dass eine Neukompilierung erforderlich ist, doch das neue Verhalten ist m\u00F6glicherweise unerw\u00FCnscht und erfordert Updates.",
+      "label": "Verhaltens\u00E4nderung bei ausgew\u00E4hlter .NET-Version",
+      "severity": "Potential",
+      "effort": 1
+    }
+  }
+}
