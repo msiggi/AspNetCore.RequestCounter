@@ -2,9 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AspNetCore.RequestCounter
@@ -39,19 +37,16 @@ namespace AspNetCore.RequestCounter
             try
             {
                 await _next(httpContext);
+            }
+            finally
+            {
                 sw.Stop();
-
                 if (!_excludedPathes.Any(x => httpContext.Request.Path.ToString().Contains(x)))
                 {
-                    RequestCounter.AddRequestCount(httpContext.Request.Path, sw.Elapsed, httpContext.Connection.RemoteIpAddress.ToString(), Utils.CheckIfMobile(httpContext));
+                    var ip = httpContext.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
+                    RequestCounter.AddRequestCount(httpContext.Request.Path, sw.Elapsed, ip, Utils.CheckIfMobile(httpContext));
                 }
-
             }
-            catch
-            {
-
-            }
-
         }
 
 
